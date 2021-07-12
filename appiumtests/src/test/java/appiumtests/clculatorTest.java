@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 
-public class clculatorTes {
+public class clculatorTest {
 
 	static AppiumDriver<MobileElement> driver;
 
@@ -30,7 +30,7 @@ public class clculatorTes {
 		cap.setCapability("deviceName", "Galaxy On5");
 		cap.setCapability("udid", "42007c66c2a1b481");
 		cap.setCapability("platformName", "Android");
-		cap.setCapability("platformVersion", "6.0.1 ");
+		cap.setCapability("platformVersion", "6.0.1");
 		cap.setCapability("appPackage", "io.selendroid.testapp");
 		cap.setCapability("appActivity", "io.selendroid.testapp.HomeScreenActivity");
 
