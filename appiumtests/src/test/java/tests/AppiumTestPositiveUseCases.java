@@ -23,7 +23,6 @@ public class AppiumTestPositiveUseCases extends BaseClass {
 		hp.selectEnButton();
 		hp.selectnoNoOption();
 		String homePageText = hp.homePageString();
-		System.out.println("I am homepage String - " + homePageText);
 		Assert.assertTrue(homePageText.equals("Hello Default Locale, Selendroid-test-app!"));
 	}
 
