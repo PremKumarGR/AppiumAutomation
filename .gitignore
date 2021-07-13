@@ -1,4 +1,4 @@
-/.metadata/
 **/.metadata/
 ./apiautomation/.settings
-./apiautomation/test-output
+**/appiumtests/test-output
+**/target
