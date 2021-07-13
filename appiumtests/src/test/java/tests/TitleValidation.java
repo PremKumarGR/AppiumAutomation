@@ -10,14 +10,14 @@ import pages.RegistrationPage;
 
 public class TitleValidation extends BaseClass {
 
-	@Test(priority = 1)
+	@Test
 	public void validateAppTitle() {
 		HomePage hp = new HomePage(driver);
 		String title = hp.findTitle();
 		Assert.assertTrue(title.equals("selendroid-test-app"));
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void validateEnbutton() {
 		HomePage hp = new HomePage(driver);
 		hp.selectEnButton();
@@ -27,7 +27,7 @@ public class TitleValidation extends BaseClass {
 		Assert.assertTrue(homePageText.equals("Hello Default Locale, Selendroid-test-app!"));
 	}
 
-	@Test(priority = 3)
+	@Test
 	public void validatePreferredCarSelectionOption() {
 		HomePage hp = new HomePage(driver);
 		hp.clickChromeLogo();
@@ -39,7 +39,7 @@ public class TitleValidation extends BaseClass {
 		hp.clickSendYourNameButton();
 	}
 
-	@Test(priority = 4)
+	@Test
 	public void validateRegistrationPage() throws Throwable {
 		HomePage hp = new HomePage(driver);
 		RegistrationPage rp = new RegistrationPage(driver);
@@ -57,7 +57,7 @@ public class TitleValidation extends BaseClass {
 
 	}
 
-	@Test(priority = 5)
+	@Test
 	public void validateProgressBar() throws InterruptedException {
 		HomePage hp = new HomePage(driver);
 		RegistrationPage rp = new RegistrationPage(driver);
@@ -66,7 +66,7 @@ public class TitleValidation extends BaseClass {
 		Assert.assertTrue(registrationPageText.equals("Welcome to register a new User"));
 	}
 
-	@Test(priority = 6)
+	@Test
 	public void navigateToDisplayToast() throws InterruptedException {
 		HomePage hp = new HomePage(driver);
 		hp.clickOnDisplayToast();
@@ -75,7 +75,7 @@ public class TitleValidation extends BaseClass {
 
 	}
 
-	@Test(priority = 7)
+	@Test
 	public void valiateDisplayPopup() throws InterruptedException {
 		HomePage hp = new HomePage(driver);
 		hp.clickOnPopupWindow();
@@ -83,7 +83,7 @@ public class TitleValidation extends BaseClass {
 		Assert.assertTrue(title.equals("selendroid-test-app"));
 	}
 
-	@Test(priority = 8)
+	@Test
 	public void validateExceptionButton() {
 		BaseClass bc = new BaseClass();
 		HomePage hp = new HomePage(driver);

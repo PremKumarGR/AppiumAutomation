@@ -5,11 +5,13 @@
     <classes>
       <class name="tests.TitleValidation">
         <methods>
+          <include name="navigateToDisplayToast"/>
           <include name="teardown"/>
           <include name="validateProgressBar"/>
           <include name="setup"/>
           <include name="validatePreferredCarSelectionOption"/>
           <include name="validateRegistrationPage"/>
+          <include name="valiateDisplayPopup"/>
         </methods>
       </class> <!-- tests.TitleValidation -->
     </classes>
