@@ -7,6 +7,7 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -18,7 +19,7 @@ public class BaseClass {
 
 	AppiumDriver<MobileElement> driver;
 
-	@BeforeTest
+	@BeforeSuite
 	public void setup() {
 
 		try {
@@ -42,6 +43,7 @@ public class BaseClass {
 
 	@AfterSuite
 	public void teardown() {
+		driver.closeApp();
 		driver.close();
 		driver.quit();
 	}

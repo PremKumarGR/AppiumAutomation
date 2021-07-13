@@ -7,5 +7,13 @@
     <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.remote.CapabilityType"/>
     <fullyQualifiedTypeName name="io.appium.java_client.remote.MobileCapabilityType"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.AfterSuite"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="io.appium.java_client.pagefactory.AndroidFindBy"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+    <fullyQualifiedTypeName name="io.appium.java_client.AppiumExecutionMethod"/>
+    <fullyQualifiedTypeName name="io.appium.java_client.pagefactory.AppiumFieldDecorator"/>
     <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+    <fullyQualifiedTypeName name="pages.HomePage"/>
+    <fullyQualifiedTypeName name="org.testng.Assert"/>
 </qualifiedTypeNameHistroy>

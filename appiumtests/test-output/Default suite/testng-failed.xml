@@ -6,8 +6,10 @@
       <class name="tests.TitleValidation">
         <methods>
           <include name="teardown"/>
-          <include name="validateAppTitle"/>
+          <include name="validateProgressBar"/>
           <include name="setup"/>
+          <include name="validatePreferredCarSelectionOption"/>
+          <include name="validateRegistrationPage"/>
         </methods>
       </class> <!-- tests.TitleValidation -->
     </classes>
