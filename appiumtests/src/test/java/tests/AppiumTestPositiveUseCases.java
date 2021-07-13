@@ -8,7 +8,7 @@ import Helpers.ScrollPage;
 import pages.HomePage;
 import pages.RegistrationPage;
 
-public class TitleValidation extends BaseClass {
+public class AppiumTestPositiveUseCases extends BaseClass {
 
 	@Test
 	public void validateAppTitle() {
@@ -31,8 +31,8 @@ public class TitleValidation extends BaseClass {
 	public void validatePreferredCarSelectionOption() {
 		HomePage hp = new HomePage(driver);
 		hp.clickChromeLogo();
+		driver.switchTo().frame(1);
 		String chromePageText = hp.findChromePageText();
-		System.out.println("I am chromePageText-" + chromePageText);
 		Assert.assertTrue(chromePageText.equals("Hello, can you please tell me your name?"));
 		hp.enterYourName("Premkumar");
 		hp.selectMercedes();
@@ -83,10 +83,4 @@ public class TitleValidation extends BaseClass {
 		Assert.assertTrue(title.equals("selendroid-test-app"));
 	}
 
-	@Test
-	public void validateExceptionButton() {
-		BaseClass bc = new BaseClass();
-		HomePage hp = new HomePage(driver);
-		hp.clickExceptionButton();
-	}
 }
